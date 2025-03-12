@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID"></script>
+
+    <!-- Google Pay SDK -->
+    <script src="https://pay.google.com/gp/p/js/pay.js"></script>
+</head>
+<body onload="showCart()">
+    <header>
+        <h1>Your Cart</h1>
+        <nav><a href="index.html">Home</a></nav>
+    </header>
+
+    <section class="cart-section">
+        <ul id="cartItems"></ul>
+        <h2 id="totalPrice"></h2>
+
+        <!-- PayPal Checkout Button -->
+        <div id="paypal-button-container"></div>
+
+        <!-- Google Pay Checkout Button -->
+        <div id="google-pay-button"></div>
+    </section>
+</body>
+</html>
